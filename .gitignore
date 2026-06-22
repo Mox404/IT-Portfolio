@@ -1,0 +1,33 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.backup
+~$*
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Large source documents and office exports
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.pdf
+
+# Local scratch/build output
+tmp/
+temp/
+scratch/
+dist/
+build/
+*.log
