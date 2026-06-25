@@ -27,13 +27,6 @@ chmod u-w,g-w,g+r .project_x.txt
 chmod g-x drafts/
 ```
 
-## Interview Talking Points
-
-* I can explain Linux permission strings and how owner, group, and other permissions work.
-* I understand why hidden files still need to be included in access reviews.
-* I can use `chmod` symbolically to make targeted permission changes.
-* I validate security changes with command output instead of assuming they worked.
-
 ## Disclaimer
 
 This is a controlled lab project. It is included to demonstrate Linux access-control skills and security documentation, not to claim production system administration experience.
