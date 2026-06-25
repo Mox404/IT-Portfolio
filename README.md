@@ -10,12 +10,14 @@ flowchart LR
     A --> C["SOC and Incident Analysis"]
     A --> D["Cloud and Networking"]
     A --> E["Automation and Systems"]
+    A --> F["IT Support Systems"]
 
     B --> B1["Internal Security Audit"]
     C --> C1["DNS and ICMP Analysis"]
     C --> C2["Web Compromise Report"]
     C --> C3["ICMP Flood DoS Report"]
     D --> D1["Network Hardening Assessment"]
+    F --> F1["Linux File Permissions"]
 ```
 
 | Project                                          | Area                                      | Status    |
@@ -25,6 +27,7 @@ flowchart LR
 | Web Compromise Incident Report: Brute Force Attack and Malware Redirect | Incident Documentation / HTTP / Brute Force | Completed |
 | ICMP Flood DoS Incident Report Using the NIST CSF | Incident Response / DoS / NIST CSF | Completed |
 | Network Hardening Risk Assessment | Network Hardening / Access Control / Firewalling | Completed |
+| Linux File Permissions Access Control | Linux / IAM / Least Privilege | Completed |
 | Wazuh SOC Mini Lab                               | SOC / SIEM / Incident Triage              | Planned   |
 | Active Directory Helpdesk Lab                    | IT Support / IAM / Windows Administration | Planned   |
 
@@ -34,5 +37,6 @@ flowchart LR
 * Security audit readiness
 * SOC and log analysis
 * IT support and systems administration
+* Linux access control
 * Cloud and networking foundations
 * Automation and scripting
