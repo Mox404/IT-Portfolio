@@ -27,15 +27,6 @@ chmod u-w,g-w,g+r .project_x.txt
 chmod g-x drafts/
 ```
 
-## Skills Demonstrated
-
-* Linux administration fundamentals
-* Least-privilege access control
-* File and directory permission analysis
-* Hidden file review
-* Command-line remediation
-* Security-focused documentation
-
 ## Interview Talking Points
 
 * I can explain Linux permission strings and how owner, group, and other permissions work.
