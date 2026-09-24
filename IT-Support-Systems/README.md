@@ -1,16 +1,8 @@
-# IT Support Systems
+# IT Support and Systems
 
-Projects focused on system administration, identity and access management, endpoint support, Linux fundamentals, and helpdesk-style technical operations.
+Hands on labs and technical coursework focused on Windows administration, identity and access management, Linux permissions, and support troubleshooting.
 
-| Project | Area | Status |
+| Project | Type | Status |
 | --- | --- | --- |
-| Linux File Permissions Access Control | Linux / IAM / Least Privilege | Completed |
-| Active Directory Helpdesk Lab | Windows Administration / IAM | Planned |
-
-## Focus Areas
-
-* Linux command-line administration
-* File and directory permissions
-* Identity and access management
-* Least-privilege access control
-* Endpoint and helpdesk troubleshooting
+| [Windows Server and Active Directory Support Lab](../active-directory-helpdesk-lab/) | Hands on home lab | Completed |
+| [Linux File Permissions Lab](./01-Linux-File-Permissions-Access-Control/) | Google Cybersecurity course lab | Completed |

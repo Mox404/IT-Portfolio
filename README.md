@@ -1,42 +1,45 @@
-# Cybersecurity Portfolio
+# Mohib Ur Rehman | IT & Cybersecurity Portfolio
 
-This portfolio contains selected cybersecurity projects focused on GRC, audit readiness, SOC analysis, IT support systems, cloud, networking, and automation.
+BSc Cyber Security, CompTIA Security+ certified and Google Cybersecurity Professional Certificate holder.
 
-## Portfolio Map
+[GitHub Profile](https://github.com/Mox404) · [LinkedIn](https://www.linkedin.com/in/mohib-r-519a30318/) · [Credly](https://www.credly.com/users/mohib-rehman.3c4906f3)
 
-```mermaid
-flowchart LR
-    A["Cybersecurity Portfolio"] --> B["GRC and Audit"]
-    A --> C["SOC and Incident Analysis"]
-    A --> D["Cloud and Networking"]
-    A --> E["Automation and Systems"]
-    A --> F["IT Support Systems"]
+This portfolio presents labs and technical coursework across IT support, Windows administration, networking, Linux, security analysis, and risk management.
 
-    B --> B1["Internal Security Audit"]
-    C --> C1["DNS and ICMP Analysis"]
-    C --> C2["Web Compromise Report"]
-    C --> C3["ICMP Flood DoS Report"]
-    D --> D1["Network Hardening Assessment"]
-    F --> F1["Linux File Permissions"]
-```
+## Featured Project
 
-| Project                                          | Area                                      | Status    |
-| ------------------------------------------------ | ----------------------------------------- | --------- |
-| Internal Security Audit Case Study - Botium Toys | GRC / Audit / Risk                        | Completed |
-| DNS and ICMP Traffic Analysis: UDP Port 53 Unreachable | Network Traffic Analysis / DNS / ICMP | Completed |
-| Web Compromise Incident Report: Brute Force Attack and Malware Redirect | Incident Documentation / HTTP / Brute Force | Completed |
-| ICMP Flood DoS Incident Report Using the NIST CSF | Incident Response / DoS / NIST CSF | Completed |
-| Network Hardening Risk Assessment | Network Hardening / Access Control / Firewalling | Completed |
-| Linux File Permissions Access Control | Linux / IAM / Least Privilege | Completed |
-| Wazuh SOC Mini Lab                               | SOC / SIEM / Incident Triage              | Planned   |
-| Active Directory Helpdesk Lab                    | IT Support / IAM / Windows Administration | Planned   |
+### [Windows Server and Active Directory Support Lab](active-directory-helpdesk-lab/)
 
-## Focus Areas
+Windows Server 2022, Active Directory, DNS, DHCP, Group Policy, NTFS, PowerShell, RDP
 
-* Governance, Risk, and Compliance
-* Security audit readiness
-* SOC and log analysis
-* IT support and systems administration
-* Linux access control
-* Cloud and networking foundations
-* Automation and scripting
+Built and configured a small Windows domain using a Server 2022 domain controller and a Windows 11 client.
+
+The lab covers user and group administration, DNS and DHCP, shared folders, drive mapping, NTFS permissions, printer sharing, Remote Desktop, account lockout recovery, and DNS troubleshooting.
+
+[View the full lab](active-directory-helpdesk-lab/)
+
+## IT Support and Systems
+
+| Project | Type | Main topics |
+| --- | --- | --- |
+| [Windows Server and Active Directory Support Lab](active-directory-helpdesk-lab/) | Hands on home lab | AD DS, DNS, DHCP, GPO, NTFS, PowerShell, RDP |
+| [Linux File Permissions Lab](IT-Support-Systems/01-Linux-File-Permissions-Access-Control/) | Google Cybersecurity course lab | Linux CLI, chmod, least privilege |
+
+## Security Analysis
+
+| Project | Main topics |
+| --- | --- |
+| [DNS and ICMP Traffic Analysis](SOC-Security-Labs/01-DNS-ICMP-Traffic-Analysis-UDP-53-Unreachable/) | DNS, UDP 53, ICMP, tcpdump |
+| [Web Compromise and Redirect Analysis](SOC-Security-Labs/02-Web-Compromise-Brute-Force-Malware-Redirect/) | HTTP, DNS, brute force, incident analysis |
+| [ICMP Flood DoS with NIST CSF](SOC-Security-Labs/03-ICMP-Flood-DoS-NIST-CSF-Incident-Report/) | DoS, firewall controls, NIST CSF |
+
+## Network Security and GRC
+
+| Project | Main topics |
+| --- | --- |
+| [Network Hardening Risk Assessment](Cloud-And-Networking/01-Network-Hardening-Risk-Assessment/) | MFA, password controls, firewalling, access control |
+| [Botium Toys Security Audit](Risk-Compliance-And-Audit/01-GRC-Security-Audit-Botium-Toys/) | GRC, controls, risk, PCI DSS and GDPR awareness |
+
+## Current Focus
+
+Windows support, systems administration, networking, identity and access management, cloud infrastructure, and security operations.

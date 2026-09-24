@@ -1,68 +1,45 @@
 # NIST CSF Action Plan
 
-## Purpose
+I used the NIST Cybersecurity Framework to organize what should happen before, during, and after the ICMP flood scenario.
 
-This action plan maps the simulated ICMP flood DoS incident to the five NIST CSF functions: Identify, Protect, Detect, Respond, and Recover.
+| Function | What I would focus on |
+| --- | --- |
+| Identify | know the critical services, firewall setup, dependencies, and business impact |
+| Protect | filter or rate limit unnecessary ICMP traffic and keep firewall rules reviewed |
+| Detect | watch ICMP volume, latency, service availability, firewall events, and IDS or IPS alerts |
+| Respond | contain the traffic, preserve logs, protect critical services, and keep people updated |
+| Recover | restore the important services first, verify the controls, then bring the rest back |
 
-## NIST CSF Mapping
+## Identify
 
-| Function | Goal | Recommended Actions |
-| --- | --- | --- |
-| Identify | Understand affected assets, risks, and dependencies. | Inventory critical network services, review firewall configuration, identify systems affected by ICMP flooding, and document business impact. |
-| Protect | Reduce the chance or impact of future attacks. | Apply ICMP rate limiting, source IP verification, firewall rule reviews, and IDS/IPS filtering for suspicious ICMP patterns. |
-| Detect | Identify abnormal activity quickly. | Monitor ICMP volume, firewall events, service availability, network latency, and IDS/IPS alerts. |
-| Respond | Contain and analyze future events. | Block suspicious traffic, preserve logs, prioritize critical services, communicate status, and document containment actions. |
-| Recover | Restore normal operations and improve resilience. | Restore critical services, validate controls, return non-critical services online, review lessons learned, and update procedures. |
+I would make sure the company knows which internal services matter most and what network devices sit in front of them.
 
-## Identify: Risk And Asset Review
+The original scenario showed why firewall configuration and network capacity both need to be part of the risk review.
 
-The organization should maintain an inventory of:
+## Protect
 
-* Critical internal network services.
-* Firewall and perimeter network devices.
-* Network monitoring tools.
-* IDS/IPS systems.
-* Business teams dependent on internal network access.
+I would use sensible ICMP filtering and rate limits rather than just allowing everything.
 
-The incident showed that network availability is a critical business requirement. Future risk reviews should include firewall configuration audits and traffic handling capacity.
+Firewall rules should also be documented so someone can tell why a rule exists later.
 
-## Protect: Preventive Controls
+## Detect
 
-Protective controls should focus on reducing exposure to unnecessary ICMP traffic and limiting the effect of traffic floods:
+The useful signs would be things like:
 
-* Configure ICMP rate limits.
-* Verify source IP addresses where possible.
-* Block unnecessary inbound ICMP traffic.
-* Keep firewall rules documented and reviewed.
-* Use IDS/IPS filtering for suspicious traffic characteristics.
+* a sudden jump in ICMP traffic
+* higher latency or packet loss
+* service availability dropping
+* firewall rate limit events
+* IDS or IPS alerts
 
-## Detect: Monitoring Improvements
+## Respond
 
-Detection should focus on early signs of traffic flooding:
+If it happens again, I would first confirm the traffic pattern and affected services, then tighten filtering, keep the important services available if possible, and save the logs for later review.
 
-* Unusual increase in incoming ICMP packets.
-* Increased latency or packet loss.
-* Sudden drop in service availability.
-* Firewall rule hits or rate-limit events.
-* IDS/IPS alerts related to flooding patterns.
+## Recover
 
-## Respond: Containment Workflow
+After the flood is under control, I would restore the most important services first and check that users can reach them normally.
 
-If a similar incident occurs, the team should:
+Then I would bring the rest back, review the monitoring data, and update the response steps based on what actually happened.
 
-* Validate the traffic pattern.
-* Confirm which services are affected.
-* Tighten filtering or rate limits.
-* Isolate or deprioritize non-critical services.
-* Keep stakeholders updated.
-* Preserve logs for investigation.
-
-## Recover: Restoration Workflow
-
-After containment, the team should:
-
-* Restore critical network services first.
-* Confirm normal internal traffic can access network resources.
-* Bring non-critical services back online in stages.
-* Review monitoring data for recurring abnormal traffic.
-* Update firewall, IDS/IPS, and response playbook documentation.
+> This is a course exercise based on a fictional incident.

@@ -1,9 +1,7 @@
-# Cloud And Networking
+# Cloud and Networking
 
-This folder contains cloud, networking, infrastructure, and foundational architecture projects.
+Networking and infrastructure focused work covering access control, firewalling, and network hardening concepts.
 
-## Projects
-
-| Project | Area | Status |
+| Project | Type | Main topics |
 | --- | --- | --- |
-| [Network Hardening Risk Assessment](./01-Network-Hardening-Risk-Assessment/) | Network Hardening / Risk Assessment / Access Control | Completed |
+| [Network Hardening Risk Assessment](./01-Network-Hardening-Risk-Assessment/) | Google Cybersecurity course exercise | MFA, password controls, firewalling, access control |

@@ -1,12 +1,11 @@
-# SOC Security Labs
+# Security Analysis Coursework
 
-This folder contains SOC, SIEM, alert triage, log analysis, and incident investigation labs.
+Selected security analysis exercises completed through the Google Cybersecurity Professional Certificate.
 
-## Projects
+These projects use controlled scenarios and sanitized evidence to practice traffic analysis, incident reasoning, and response planning.
 
-| Project | Area | Status |
-| --- | --- | --- |
-| [DNS and ICMP Traffic Analysis: UDP Port 53 Unreachable](./01-DNS-ICMP-Traffic-Analysis-UDP-53-Unreachable/) | Network Traffic Analysis / DNS / ICMP | Completed |
-| [Web Compromise Incident Report: Brute Force Attack and Malware Redirect](./02-Web-Compromise-Brute-Force-Malware-Redirect/) | Incident Documentation / HTTP / Brute Force | Completed |
-| [ICMP Flood DoS Incident Report Using the NIST CSF](./03-ICMP-Flood-DoS-NIST-CSF-Incident-Report/) | Incident Response / DoS / NIST CSF | Completed |
-| Wazuh SOC Mini Lab | SOC / SIEM / Incident Triage | Planned |
+| Project | Main topics |
+| --- | --- |
+| [DNS and ICMP Traffic Analysis](./01-DNS-ICMP-Traffic-Analysis-UDP-53-Unreachable/) | tcpdump, DNS, UDP 53, ICMP |
+| [Web Compromise and Redirect Analysis](./02-Web-Compromise-Brute-Force-Malware-Redirect/) | HTTP, DNS, brute force, redirect behavior |
+| [ICMP Flood DoS with NIST CSF](./03-ICMP-Flood-DoS-NIST-CSF-Incident-Report/) | DoS, firewall controls, response planning |

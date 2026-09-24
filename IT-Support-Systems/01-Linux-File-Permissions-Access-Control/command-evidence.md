@@ -1,47 +1,39 @@
 # Command Evidence
 
-## Evidence Overview
+These are the screenshots from the Linux permissions lab. I kept them at the same display width so the page stays readable. Clicking an image opens the full size version.
 
-The screenshots below show the Linux commands used to inspect and remediate file permissions in the lab environment.
+## Checking the directory
 
-## Directory Navigation and Listing
+<a href="assets/evidence/01-home-directory-listing.png"><img src="assets/evidence/01-home-directory-listing.png" alt="Home directory listing" width="700"></a>
 
-![Home directory listing](assets/evidence/01-home-directory-listing.png)
+I used `pwd`, `ls`, and `ls -la` to confirm where I was and to make sure hidden files were included.
 
-This screenshot shows use of `pwd`, `ls`, and `ls -la` to confirm the current location and inspect directory contents.
+## Removing write access for others
 
-## Removing Other Write Access
-
-![project_k permission remediation](assets/evidence/02-project-k-other-write-removed.png)
-
-This screenshot shows the starting permissions inside `~/projects`, then the command:
+<a href="assets/evidence/02-project-k-other-write-removed.png"><img src="assets/evidence/02-project-k-other-write-removed.png" alt="project_k permission remediation" width="700"></a>
 
 ```bash
 chmod o-w project_k.txt
 ```
 
-The follow-up `ls -la` output confirms that `project_k.txt` no longer grants write access to others.
+I ran `ls -la` again and checked that `project_k.txt` no longer gave write access to others.
 
-## Fixing Hidden Archived File Permissions
+## Fixing the hidden archived file
 
-![Hidden file permission remediation](assets/evidence/03-hidden-file-permissions-fixed.png)
-
-This screenshot shows the command:
+<a href="assets/evidence/03-hidden-file-permissions-fixed.png"><img src="assets/evidence/03-hidden-file-permissions-fixed.png" alt="Hidden file permission remediation" width="700"></a>
 
 ```bash
 chmod u-w,g-w,g+r .project_x.txt
 ```
 
-The follow-up `ls -la` output confirms that `.project_x.txt` was changed to read-only access for the user and group, with no access for others.
+The result left the user and group with read access while removing write access.
 
-## Restricting the Drafts Directory
+## Restricting the drafts directory
 
-![Drafts directory permission remediation](assets/evidence/04-drafts-directory-restricted.png)
-
-This screenshot shows the command:
+<a href="assets/evidence/04-drafts-directory-restricted.png"><img src="assets/evidence/04-drafts-directory-restricted.png" alt="Drafts directory permission remediation" width="700"></a>
 
 ```bash
 chmod g-x drafts/
 ```
 
-The follow-up `ls -la` output confirms that the `drafts` directory is restricted to the owner.
+I checked the final permissions and confirmed that the group could no longer enter the directory.
