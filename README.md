@@ -2,7 +2,7 @@
 
 BSc Cyber Security, CompTIA Security+ certified and Google Cybersecurity Professional Certificate holder.
 
-[GitHub Profile](https://github.com/Mox404) · [LinkedIn](https://www.linkedin.com/in/mohib-r-519a30318/) · [Credly](https://www.credly.com/users/mohib-rehman.3c4906f3)
+[GitHub Profile](https://github.com/Mox404) · [LinkedIn](https://www.linkedin.com/in/mohib-u-rehman/) · [Credly](https://www.credly.com/users/mohib-rehman.3c4906f3)
 
 This portfolio presents labs and technical coursework across IT support, Windows administration, networking, Linux, security analysis, and risk management.
 
